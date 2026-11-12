@@ -1,7 +1,29 @@
 <html>
     <head>
+        <style>
+            .cartao{
+                position: relative;
+                display:flex;
+                gap: 30px;
+                border: 2px solid gray;
+                border-radius: 4px;
+                padding: 4px;
+                font-family: 'Segoe UI';
+                color: cornflowerblue;
+            }  
+            h2{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                margin: 0 10px;
+            } 
+        </style>
     </head>
     <body>
+      <div class="cartao">
+        <img src="{{imagem}}">
+        <h2>#{{numero}}</h2>
         <h1>{{nome}}</h1>
+      </div>         
     </body>
 </html>
